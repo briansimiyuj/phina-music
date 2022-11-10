@@ -15,7 +15,24 @@ function togglePlay(){
       
     video.paused ? video.play() : video.pause()
 
-    console.log('working')
-
 }
 
+
+
+video.addEventListener("play", () =>{
+
+    container.classList.remove("paused")
+
+    console.log('working')
+
+})
+
+
+
+video.addEventListener("pause", () =>{
+
+    container.classList.add("paused")
+
+    console.log('perfect')
+
+})
