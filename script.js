@@ -64,8 +64,6 @@ const nextSong = () =>{
         
         videoIndex = 0
 
-        console.log('working')
-
     }
 
 
@@ -82,8 +80,6 @@ const nextSong = () =>{
             togglePlay()
             
         }, 1000)
-        
-        console.log('working')
 
     }
 
@@ -93,5 +89,28 @@ const nextSong = () =>{
 nextBTN.addEventListener("click", () =>{
 
     nextSong()
+
+})
+
+
+
+
+
+const previousSong = () =>{
+
+    videoIndex--
+
+
+    loadVideo(videos[videoIndex])
+
+}
+
+
+
+prevBTN.addEventListener("click", () =>{
+
+    previousSong()
+
+    console.log('working')
 
 })
