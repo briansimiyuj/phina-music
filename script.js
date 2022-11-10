@@ -10,6 +10,16 @@ const container = document.querySelector(".container"),
 
 
 
+document.addEventListener("keydown", (e) =>{
+
+    const tagName = document.activeElement.tagName.toLowerCase()
+
+
+    if (tagName === "input") return
+
+})
+
+
 const videos = ['In Love', 'Number One', 'Sitaki Tena', 'Upo Nyonyo']
 
 
