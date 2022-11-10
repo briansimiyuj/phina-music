@@ -20,8 +20,6 @@ const loadVideo = (song) =>{
 
     video.src = `videos/${song}.mp4`
 
-    console.log(song)
-
 }
 
 loadVideo(videos[videoIndex])
@@ -45,8 +43,6 @@ video.addEventListener("play", () =>{
 
     container.classList.remove("paused")
 
-    console.log('working')
-
 })
 
 
@@ -55,6 +51,24 @@ video.addEventListener("pause", () =>{
 
     container.classList.add("paused")
 
-    console.log('perfect')
+})
+
+
+
+
+const nextSong = () =>{
+
+    videoIndex++
+
+    loadVideo(videos[videoIndex])
+
+}
+
+
+nextBTN.addEventListener("click", () =>{
+
+    nextSong()
+
+    console.log('working')
 
 })
