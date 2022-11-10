@@ -100,6 +100,14 @@ const previousSong = () =>{
 
     videoIndex--
 
+    if (videoIndex < 0) {
+        
+        videoIndex = videos.length - 1
+
+        console.log('working')
+
+    }
+
 
     loadVideo(videos[videoIndex])
 
@@ -110,7 +118,5 @@ const previousSong = () =>{
 prevBTN.addEventListener("click", () =>{
 
     previousSong()
-
-    console.log('working')
 
 })
