@@ -2,7 +2,13 @@ const container = document.querySelector(".container"),
 
     video = document.querySelector("video"),
 
-    playBTN = document.querySelector(".play-BTN")
+    playBTN = document.querySelector(".play-BTN"),
+
+    prevBTN = document.querySelector(".prev-BTN"),
+
+    nextBTN = document.querySelector(".next-BTN")
+
+console.log(nextBTN, prevBTN)
 
 
 playBTN.addEventListener("click", togglePlay)
