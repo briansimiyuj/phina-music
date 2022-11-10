@@ -17,6 +17,24 @@ document.addEventListener("keydown", (e) =>{
 
     if (tagName === "input") return
 
+
+    switch (e.key.toLowerCase()) {
+        
+        case " ":
+
+            if (tagName === "input") return
+
+
+        case "k":
+
+            togglePlay()
+
+            console.log('working')
+            
+        break
+    
+    }
+
 })
 
 
