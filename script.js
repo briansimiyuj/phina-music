@@ -8,7 +8,23 @@ const container = document.querySelector(".container"),
 
     nextBTN = document.querySelector(".next-BTN")
 
-console.log(nextBTN, prevBTN)
+
+
+const videos = ['In Love', 'Number One', 'Sitaki Tena', 'Upo Nyonyo']
+
+
+let videoIndex = 0
+
+
+const loadVideo = (song) =>{
+
+    video.src = `videos/${song}.mp4`
+
+    console.log(song)
+
+}
+
+loadVideo(videos[videoIndex])
 
 
 playBTN.addEventListener("click", togglePlay)
