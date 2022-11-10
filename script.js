@@ -1,14 +1,21 @@
-const playBtn = document.querySelector("#play"),
+const container = document.querySelector(".container"),
 
-    video = document.querySelector("video")
+    video = document.querySelector("video"),
+
+    playBTN = document.querySelector(".play-BTN")
 
 
-playBtn.addEventListener("click", () =>{
+playBTN.addEventListener("click", togglePlay)
 
-    playBtn.classList.remove("fa-play")
-    
-    playBtn.classList.add("fa-pause")
+video.addEventListener("click", togglePlay)
 
-    video.play()
 
-})
+
+function togglePlay(){
+      
+    video.paused ? video.play() : video.pause()
+
+    console.log('working')
+
+}
+
