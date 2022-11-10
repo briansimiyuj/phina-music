@@ -1,0 +1,40 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    max-width: 1000px;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    margin: auto;
+}
+
+video{
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    left: 45%;
+    bottom: 1rem;
+    margin: 0 auto;
+}
+
+button{
+    background: none;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
