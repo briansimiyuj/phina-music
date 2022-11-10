@@ -71,6 +71,22 @@ const nextSong = () =>{
 
     loadVideo(videos[videoIndex])
 
+
+    if (container.classList.contains("paused")) {
+
+        container.classList.remove("paused")
+
+
+        setTimeout(() => {
+            
+            togglePlay()
+            
+        }, 1000)
+        
+        console.log('working')
+
+    }
+
 }
 
 
