@@ -54,3 +54,12 @@ button:hover{
 .container:not(.paused) .play-icon{
     display: none;
 }
+
+.next-BTN{
+    margin-left: 3rem;
+    bottom: 2.2rem;
+}    
+
+.next-BTN i{
+    font-size: 1.5rem;    
+}
