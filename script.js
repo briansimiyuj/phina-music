@@ -60,6 +60,15 @@ const nextSong = () =>{
 
     videoIndex++
 
+    if (videoIndex > videos.length - 1) {
+        
+        videoIndex = 0
+
+        console.log('working')
+
+    }
+
+
     loadVideo(videos[videoIndex])
 
 }
@@ -68,7 +77,5 @@ const nextSong = () =>{
 nextBTN.addEventListener("click", () =>{
 
     nextSong()
-
-    console.log('working')
 
 })
