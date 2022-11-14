@@ -19,7 +19,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #000; */
     margin: auto;
     position: relative;
 }
@@ -33,7 +32,6 @@ video{
     height: 30px;
     position: absolute;
     bottom: 2rem;
-    background: red;
 }
 
 .buttons{
@@ -50,7 +48,6 @@ video{
     content: '';
     position: absolute;
     bottom: 0;
-    /* background: linear-gradient(to top, rgba(0, 0, 0, .75), transparent); */
     width: 100%;
     aspect-ratio: 8 / 1;
     z-index: -1;
@@ -62,6 +59,24 @@ button{
     background: none;
     color: #fff;
     font-size: 2rem;
+}
+
+.playprevnext{
+    background: red;
+    width: 1000px;
+}
+
+.prev-BTN i{
+    margin: 0 1rem;
+}
+
+.next-BTN i{
+    margin: 0 0 0 1rem;
+}
+
+.pause-icon, .play-icon{
+    margin: 0 0 0 2rem;
+    transform: translate(5px, 6px);
 }
 
 
@@ -77,20 +92,14 @@ button:hover{
     display: none;
 }
 
-.next-BTN{
-    margin-left: 3rem;
-    bottom: 2.3rem;
+.next-BTN, .prev-BTN{
+    position: absolute;
 }    
 
-.next-BTN i{
+.next-BTN i, .prev-BTN i{
     font-size: 1.5rem;    
 }
 
 .prev-BTN{
-    left: 45%;
-    bottom: 2.2rem;
-}
-
-.prev-BTN i{
-    font-size: 1.5rem;
+    padding-right: 2rem;
 }
