@@ -42,7 +42,6 @@ video{
     margin-left: 1rem;
     display: flex;
     align-items: start;
-    background: red;
 }
 
 .buttons::before{
@@ -102,4 +101,12 @@ button:hover{
 
 .prev-BTN{
     padding-right: 2rem;
+}
+
+.container.theatre-mode .tall{
+    display: none;
+}
+
+.container:not(.theatre-mode) .wide{
+    display: none;
 }
