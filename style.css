@@ -121,7 +121,6 @@ button:hover{
 }
 
 .view-container{
-    background: red;
     display: flex;
     justify-content: space-between;
     gap: 1rem;

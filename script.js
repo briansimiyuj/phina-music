@@ -8,7 +8,9 @@ const container = document.querySelector(".container"),
 
     nextBTN = document.querySelector(".next-BTN"),
 
-    theatre = document.querySelector(".theatre")
+    theatre = document.querySelector(".theatre"), 
+
+    fullScreen = document.querySelector("#full-screen")
 
 
 
@@ -171,6 +173,28 @@ theatre.addEventListener("click", () =>{
 
     container.classList.toggle("theatre-mode")
 
-    console.log('working')
-
 })
+
+
+
+
+fullScreen.addEventListener("click", fullScreenChange)
+
+
+function fullScreenChange(){
+
+      if (document.fullscreenElement === null) {
+        
+        container.requestFullscreen()
+
+        console.log('working')
+
+      } else {
+
+        document.exitFullscreen()
+
+        console.log('perfect')
+        
+      }
+
+}
