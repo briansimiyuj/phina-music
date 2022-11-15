@@ -6,7 +6,10 @@ const container = document.querySelector(".container"),
 
     prevBTN = document.querySelector(".prev-BTN"),
 
-    nextBTN = document.querySelector(".next-BTN")
+    nextBTN = document.querySelector(".next-BTN"),
+
+    theatre = document.querySelector(".theatre")
+
 
 
 
@@ -28,8 +31,6 @@ document.addEventListener("keydown", (e) =>{
         case "k":
 
             togglePlay()
-
-            console.log('working')
             
         break
     
@@ -160,5 +161,16 @@ const previousSong = () =>{
 prevBTN.addEventListener("click", () =>{
 
     previousSong()
+
+})
+
+
+
+
+theatre.addEventListener("click", () =>{
+
+    container.classList.toggle("theatre-mode")
+
+    console.log('working')
 
 })

@@ -59,6 +59,7 @@ button{
     background: none;
     color: #fff;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .playprevnext{
