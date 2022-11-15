@@ -35,13 +35,14 @@ video{
 }
 
 .buttons{
-    width: 73%;
+    width: 97%;
     justify-content: space-between;
     height: 5rem;
     transform: translateY(-10px);
     margin-left: 1rem;
     display: flex;
     align-items: start;
+    background: red;
 }
 
 .buttons::before{
@@ -62,7 +63,6 @@ button{
 }
 
 .playprevnext{
-    background: red;
     width: 1000px;
 }
 
