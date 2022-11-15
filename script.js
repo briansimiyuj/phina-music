@@ -187,14 +187,17 @@ function fullScreenChange(){
         
         container.requestFullscreen()
 
-        console.log('working')
-
       } else {
 
         document.exitFullscreen()
-
-        console.log('perfect')
         
       }
 
 }
+
+
+document.addEventListener("fullscreenchange", () =>{
+
+    container.classList.toggle("full-screen")  
+
+})
