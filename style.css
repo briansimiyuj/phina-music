@@ -111,3 +111,18 @@ button:hover{
 .container:not(.theatre-mode) .wide{
     display: none;
 }
+
+.container.full-screen .open{
+    display: none;
+}
+
+.container:not(.full-screen) .close{
+    display: none;
+}
+
+.view-container{
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
