@@ -51,6 +51,15 @@ document.addEventListener("keydown", (e) =>{
 
         break
 
+
+        case "h":
+
+            theatreModeChange()
+
+            console.log('working')
+
+        break
+
     
     }
 
@@ -190,8 +199,6 @@ theatre.addEventListener("click", theatreModeChange)
 function theatreModeChange(){
 
     container.classList.toggle("theatre-mode")
-
-    console.log('working')
 
 }
 
