@@ -184,13 +184,16 @@ prevBTN.addEventListener("click", () =>{
 
 
 
+theatre.addEventListener("click", theatreModeChange)
 
-theatre.addEventListener("click", () =>{
+
+function theatreModeChange(){
 
     container.classList.toggle("theatre-mode")
 
-})
+    console.log('working')
 
+}
 
 
 
