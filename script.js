@@ -31,11 +31,19 @@ document.addEventListener("keydown", (e) =>{
 
             if (tagName === "input") return
 
-
         case "k":
 
             togglePlay()
             
+        break
+
+
+        case "t":
+
+            miniPlayerChange()
+            
+            console.log('working')
+
         break
     
     }
@@ -231,8 +239,6 @@ video.addEventListener("enterpictureinpicture", () =>{
 
     container.classList.add("mini-player")
 
-    console.log('working')
-
 })
 
 
@@ -240,7 +246,5 @@ video.addEventListener("enterpictureinpicture", () =>{
 video.addEventListener("leavepictureinpicture", () =>{
 
     container.classList.remove("mini-player")
-
-    console.log('perfect')
 
 })
