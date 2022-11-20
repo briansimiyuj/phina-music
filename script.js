@@ -10,7 +10,9 @@ const container = document.querySelector(".container"),
 
     theatre = document.querySelector(".theatre"), 
 
-    fullScreen = document.querySelector("#full-screen")
+    fullScreen = document.querySelector("#full-screen"),
+
+    miniPlayer = document.querySelector(".mini-player")
 
 
 
@@ -201,3 +203,28 @@ document.addEventListener("fullscreenchange", () =>{
     container.classList.toggle("full-screen")  
 
 })
+
+
+
+miniPlayer.addEventListener("click", miniPlayerChange)
+
+
+
+function miniPlayerChange(){
+
+    if (container.classList.contains("mini-player")) {
+
+        document.exitPictureInPicture()
+        
+        console.log('working')
+
+    } else {
+
+        video.requestPictureInPicture()
+
+        console.log('perfect')
+        
+    }
+
+}
+
