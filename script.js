@@ -14,8 +14,9 @@ const container = document.querySelector(".container"),
 
     miniPlayer = document.querySelector(".mini-player"),
 
-    mute = document.querySelector(".mute")
+    mute = document.querySelector(".mute"),
 
+    input = document.querySelector("input")
 
 
 
@@ -65,8 +66,6 @@ document.addEventListener("keydown", (e) =>{
         case "m":
 
             toggleMute()
-
-            console.log('working')
 
         break
 
@@ -286,3 +285,36 @@ function toggleMute(){
     video.muted = !video.muted
 
 }
+
+
+
+
+
+video.addEventListener("volumechange", () =>{
+
+    input.value = video.volume
+
+
+    let volumeLevel
+
+
+    if (video.muted || video.volume === 0) {
+        
+        input.value = 0
+
+        volumeLevel = "muted"
+
+    }else if(video.volume >= .5) {
+
+        volumeLevel = "high"
+        
+    }else{
+
+        volumeLevel = "low"
+
+    }
+
+
+    container.dataset.volumeLevel = volumeLevel
+
+})
