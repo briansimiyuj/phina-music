@@ -70,7 +70,6 @@ button{
 
 .playprevnext{
     width: 1000px;
-    background: red;
     position: relative;
 }
 
@@ -79,6 +78,22 @@ button{
     left: 120px;
     top: 5px;
 }
+
+.volume-high-icon, .volume-low-icon, .volume-muted-icon{
+    display: none;
+}
+
+.container[data-volume-level="high"] .volume-high-icon{
+    display: block;
+}   
+
+.container[data-volume-level="low"] .volume-low-icon{
+    display: block;
+}   
+
+.container[data-volume-level="muted"] .volume-muted-icon{
+    display: block;
+}   
 
 .prev-BTN i{
     margin: 0 1rem;
