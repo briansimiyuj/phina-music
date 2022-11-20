@@ -79,6 +79,19 @@ button{
     top: 5px;
 }
 
+input{
+    width: 0;
+    margin-left: 25px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 150ms ease-in-out;
+}
+
+.volume-container:hover input, input:focus-within{
+    width: 100px;
+    transform: scaleX(1);
+}
+
 .volume-high-icon, .volume-low-icon, .volume-muted-icon{
     display: none;
 }
