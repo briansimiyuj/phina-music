@@ -41,10 +41,18 @@ document.addEventListener("keydown", (e) =>{
         case "t":
 
             miniPlayerChange()
-            
+
+        break
+
+
+        case "f":
+
+            fullScreenChange()
+
             console.log('working')
 
         break
+
     
     }
 
