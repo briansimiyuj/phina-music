@@ -70,6 +70,14 @@ button{
 
 .playprevnext{
     width: 1000px;
+    background: red;
+    position: relative;
+}
+
+.volume-container{
+    position: absolute;
+    left: 120px;
+    top: 5px;
 }
 
 .prev-BTN i{
