@@ -61,6 +61,15 @@ document.addEventListener("keydown", (e) =>{
 
         break
 
+
+        case "m":
+
+            toggleMute()
+
+            console.log('working')
+
+        break
+
     
     }
 
@@ -275,7 +284,5 @@ mute.addEventListener("click", toggleMute)
 function toggleMute(){
 
     video.muted = !video.muted
-
-    console.log('working')
 
 }
