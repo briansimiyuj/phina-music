@@ -49,8 +49,6 @@ document.addEventListener("keydown", (e) =>{
 
             fullScreenChange()
 
-            console.log('working')
-
         break
 
     
