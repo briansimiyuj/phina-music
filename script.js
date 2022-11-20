@@ -283,9 +283,20 @@ mute.addEventListener("click", toggleMute)
 function toggleMute(){
 
     video.muted = !video.muted
-
+    
 }
 
+
+
+
+
+input.addEventListener("input", (e) =>{
+
+    video.volume = e.target.value
+
+    video.muted = e.target.value === 0
+
+})
 
 
 
@@ -317,4 +328,8 @@ video.addEventListener("volumechange", () =>{
 
     container.dataset.volumeLevel = volumeLevel
 
+    console.log(volumeLevel)
+
 })
+
+
