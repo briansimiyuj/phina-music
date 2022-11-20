@@ -12,7 +12,10 @@ const container = document.querySelector(".container"),
 
     fullScreen = document.querySelector("#full-screen"),
 
-    miniPlayer = document.querySelector(".mini-player")
+    miniPlayer = document.querySelector(".mini-player"),
+
+    mute = document.querySelector(".mute")
+
 
 
 
@@ -55,8 +58,6 @@ document.addEventListener("keydown", (e) =>{
         case "h":
 
             theatreModeChange()
-
-            console.log('working')
 
         break
 
@@ -264,3 +265,17 @@ video.addEventListener("leavepictureinpicture", () =>{
     container.classList.remove("mini-player")
 
 })
+
+
+
+mute.addEventListener("click", toggleMute)
+
+
+
+function toggleMute(){
+
+    video.muted = !video.muted
+
+    console.log('working')
+
+}
