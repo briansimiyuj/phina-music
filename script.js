@@ -215,16 +215,32 @@ function miniPlayerChange(){
     if (container.classList.contains("mini-player")) {
 
         document.exitPictureInPicture()
-        
-        console.log('working')
 
     } else {
 
         video.requestPictureInPicture()
-
-        console.log('perfect')
         
     }
 
 }
 
+
+
+
+video.addEventListener("enterpictureinpicture", () =>{
+
+    container.classList.add("mini-player")
+
+    console.log('working')
+
+})
+
+
+
+video.addEventListener("leavepictureinpicture", () =>{
+
+    container.classList.remove("mini-player")
+
+    console.log('perfect')
+
+})
