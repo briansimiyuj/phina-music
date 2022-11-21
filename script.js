@@ -348,6 +348,17 @@ repeat.addEventListener("click", () =>{
 
 
 
+
+video.addEventListener("loadeddata", () =>{
+
+    totalTime.textContent = formatDuration(video.duration)
+
+    console.log('working')
+
+})
+
+
+
 const leadingZeroFormatter = new Intl.NumberFormat(undefined, {
 
     minimumIntegerDigits: 2
@@ -376,5 +387,3 @@ function formatDuration(time){
     }
 
 }
-
-formatDuration()
