@@ -24,7 +24,9 @@ const container = document.querySelector(".container"),
 
     currentTime = document.querySelector(".current-time"),
 
-    speed = document.querySelector(".speed")
+    speed = document.querySelector(".speed"),
+
+    slower = document.querySelector(".slower")
 
 
 
@@ -427,7 +429,28 @@ function playBackSpeed(){
 
         speed.textContent = `${newPlaybackRate}x`
 
+}
 
-    console.log('working')
+
+
+
+slower.addEventListener("click", slowPlayBackSpeed)
+
+
+
+
+function slowPlayBackSpeed(){
+
+    let newPlaybackRate = video.playbackRate - .25
+
+    if(newPlaybackRate < 2)
+
+        newPlaybackRate - .25
+
+        video.playbackRate = newPlaybackRate
+
+        slower.textContent = `${newPlaybackRate}x`
+
+        console.log('working')
 
 }
