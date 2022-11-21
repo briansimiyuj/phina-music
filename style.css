@@ -199,5 +199,10 @@ button:hover{
 
 .wider{
     font-size: 1.5rem;
-    margin-right: 3rem;
+    margin-right: 2rem;
+}
+
+.slower{
+    font-size: 1rem;
+    margin-top: 8px;
 }
