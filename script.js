@@ -348,6 +348,13 @@ repeat.addEventListener("click", () =>{
 
 
 
+const leadingZeroFormatter = new Intl.NumberFormat(undefined, {
+
+    minimumIntegerDigits: 2
+
+})
+
+
 
 function formatDuration(time){
 
