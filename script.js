@@ -18,7 +18,11 @@ const container = document.querySelector(".container"),
 
     input = document.querySelector("input"),
    
-    repeat = document.querySelector("#repeat")
+    repeat = document.querySelector("#repeat"),
+
+    totalTime = document.querySelector(".total-time"),
+
+    currentTime = document.querySelector(".current-time")
 
 
 
@@ -340,6 +344,30 @@ repeat.addEventListener("click", () =>{
 
     container.classList.toggle("repeat")
 
-    console.log('working')
-
 })
+
+
+
+
+function formatDuration(time){
+
+    const seconds = Math.floor(time % 60)
+
+    const minutes = Math.floor(time / 60) % 60
+
+    const hours = Math.floor(time / 3600)
+
+
+    if (hours === 0) {
+        
+        return `${minutes}:${leadingZeroFormatter.format(seconds)}`
+        
+    }else{
+        
+        return `${hours}:${leadingZeroFormatter.format(minutes)}:${leadingZeroFormatter.format(seconds)}`
+
+    }
+
+}
+
+formatDuration()
