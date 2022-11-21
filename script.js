@@ -353,10 +353,18 @@ video.addEventListener("loadeddata", () =>{
 
     totalTime.textContent = formatDuration(video.duration)
 
+})
+
+
+
+
+video.addEventListener("timeupdate", () =>{
+
+    currentTime.textContent = formatDuration(video.currentTime)
+
     console.log('working')
 
 })
-
 
 
 const leadingZeroFormatter = new Intl.NumberFormat(undefined, {
