@@ -184,3 +184,15 @@ button:hover{
 .container.repeat .fa-repeat::after{
     visibility: visible;
 }
+
+.duration-container{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    flex-grow: 1;
+    position: absolute;
+    left: 23%;
+    top: 7px;
+    color: #fff;
+    font-size: 1.1rem;
+}
