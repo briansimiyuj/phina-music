@@ -167,3 +167,20 @@ button:hover{
     justify-content: space-between;
     gap: 1rem;
 }
+
+.fa-repeat{
+    position: relative;
+}
+
+.fa-repeat::after{
+    content: '1';
+    font-size: 10px;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    visibility: hidden;
+}
+
+.container.repeat .fa-repeat::after{
+    visibility: visible;
+}
