@@ -22,7 +22,9 @@ const container = document.querySelector(".container"),
 
     totalTime = document.querySelector(".total-time"),
 
-    currentTime = document.querySelector(".current-time")
+    currentTime = document.querySelector(".current-time"),
+
+    speed = document.querySelector(".speed")
 
 
 
@@ -402,5 +404,30 @@ function formatDuration(time){
         return `${hours}:${leadingZeroFormatter.format(minutes)}:${leadingZeroFormatter.format(seconds)}`
 
     }
+
+}
+
+
+
+
+speed.addEventListener("click", playBackSpeed)
+
+
+
+
+function playBackSpeed(){
+
+    let newPlaybackRate = video.playbackRate + .25
+
+    if(newPlaybackRate > 2)
+
+        newPlaybackRate + .25
+
+        video.playbackRate = newPlaybackRate
+
+        speed.textContent = `${newPlaybackRate}x`
+
+
+    console.log('working')
 
 }
