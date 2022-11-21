@@ -16,7 +16,9 @@ const container = document.querySelector(".container"),
 
     mute = document.querySelector(".mute"),
 
-    input = document.querySelector("input")
+    input = document.querySelector("input"),
+   
+    repeat = document.querySelector("#repeat")
 
 
 
@@ -327,9 +329,17 @@ video.addEventListener("volumechange", () =>{
 
 
     container.dataset.volumeLevel = volumeLevel
-
-    console.log(volumeLevel)
-
+    
 })
 
 
+
+
+
+repeat.addEventListener("click", () =>{
+
+    container.classList.toggle("repeat")
+
+    console.log('working')
+
+})
