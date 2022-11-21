@@ -362,7 +362,16 @@ video.addEventListener("timeupdate", () =>{
 
     currentTime.textContent = formatDuration(video.currentTime)
 
-    console.log('working')
+    if (container.classList.contains("repeat") && video.currentTime === video.duration) {
+        
+        video.currentTime = 0
+
+        togglePlay()
+        
+        console.log('working')
+
+    }
+
 
 })
 
