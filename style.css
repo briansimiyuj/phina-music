@@ -213,7 +213,7 @@ button:hover{
     display: flex;
     align-items: center;
     width: 100%;
-    background: red;
+    /* background: red; */
     position: absolute;
     top: -2rem;
     left: -.8rem;

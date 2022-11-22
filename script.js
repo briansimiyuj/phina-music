@@ -506,7 +506,7 @@ function toggleScrubbing(e){
     }
 
     timelineUpdate(e)
-    
+
 }
 
 
@@ -515,6 +515,11 @@ function timelineUpdate(e){
       const rect = timelineContainer.getBoundingClientRect()
 
       const percent = Math.min(Math.max(0, e.x - rect.x), rect.width) / rect.width
+
+
+      timelineContainer.style.setProperty("--preview-position", percent)
+
+      console.log('working')
 
 }
 
