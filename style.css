@@ -288,3 +288,13 @@ button:hover{
     }
 
 }
+
+
+
+@media(max-width: 800px){
+
+    .button-container{
+        bottom: 13rem;
+    }
+
+}
