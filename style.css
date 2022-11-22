@@ -388,3 +388,24 @@ button:hover{
     }
 
 }
+
+
+@media(max-width: 400px){
+
+    .wider{
+        margin-right: 1rem;
+    }
+
+    .speed{
+        font-size: 12px;
+    }
+
+    .duration-container{
+        margin-left: 1rem;
+    }
+
+    .volume-container{
+        left: 90px;
+    }
+
+}
