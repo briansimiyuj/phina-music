@@ -246,3 +246,19 @@ button:hover{
     right: calc(100% - var(--progress-position) * 100%);
     background-color: #f00;
 }
+
+.timeline-container:hover .timeline, .container.scrubbing .timeline{
+    height: 100%;
+}
+
+.timeline-container:hover .container.scrubbing{
+    display: block;
+}
+
+.timeline-container:hover .thumb-indicator, .container.scrubbing{
+    --scale: 1;
+}
+
+.timeline-container:hover .timeline::before, .container.scrubbing, .timeline::before{
+    display: block;
+}
