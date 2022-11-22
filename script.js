@@ -373,10 +373,14 @@ video.addEventListener("timeupdate", () =>{
         video.currentTime = 0
 
         togglePlay()
-        
-        console.log('working')
 
     }
+   
+    const percent = video.currentTime / video.duration
+
+    timelineContainer.style.setProperty("--progress-position", percent)
+
+    console.log('working')
 
 
 })
@@ -518,8 +522,6 @@ function timelineUpdate(e){
 
 
       timelineContainer.style.setProperty("--preview-position", percent)
-
-      console.log('working')
 
 }
 
