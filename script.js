@@ -181,8 +181,6 @@ const previousSong = () =>{
         
         videoIndex = videos.length - 1
 
-        console.log('working')
-
     }
 
 
@@ -453,8 +451,6 @@ function slowPlayBackSpeed(){
         video.playbackRate = newPlaybackRate
 
         slower.textContent = `${newPlaybackRate}x`
-
-        console.log('working')
 
 }
 
