@@ -494,16 +494,12 @@ function toggleScrubbing(e){
 
         video.pause()
 
-        console.log(wasPaused)
-
     } else {
 
         video.currentTime = percent * video.duration
 
         if(!wasPaused) video.play()
 
-        console.log('perfect')
-        
     }
 
     timelineUpdate(e)
