@@ -357,3 +357,34 @@ button:hover{
     }
 
 }
+
+
+/* Media Queries */
+
+@media(max-width: 500px){
+
+    button i{
+        font-size: 1rem !important;
+    }
+
+    svg{
+        width: 23px !important;
+    }
+
+    .volume-container{
+        left: 100px;
+    }
+
+    .duration-container{
+        font-size: .9rem;
+    }
+
+    .buttons{
+        margin-left: 0;
+    }
+
+    .button-container{
+        bottom: 18rem;
+    }
+
+}
