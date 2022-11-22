@@ -298,3 +298,17 @@ button:hover{
     }
 
 }
+
+
+
+@media(max-width: 760px){
+
+    .button-container{
+        bottom: 16rem;
+    }
+
+    .duration-container{
+        left: 27%;
+    }
+
+}
