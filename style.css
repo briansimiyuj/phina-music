@@ -312,3 +312,16 @@ button:hover{
     }
 
 }
+
+
+@media(max-width: 700px){
+
+    .duration-container{
+        left: 30%;
+    }
+
+    .button-container{
+        bottom: 14rem;
+    }
+
+}
