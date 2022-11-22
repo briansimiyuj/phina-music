@@ -38,7 +38,7 @@ video{
     height: 30px;
     position: absolute;
     bottom: 0;
-    display: none;
+    /* display: none; */
     transition: display 150ms ease;
 }
 
@@ -268,4 +268,15 @@ button:hover{
 
 .timeline-container:hover .timeline::before, .container.scrubbing, .timeline::before{
     display: block;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 1200px){
+
+    .button-container{
+        bottom: 7rem;
+    }
+
 }
