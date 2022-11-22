@@ -217,6 +217,8 @@ button:hover{
     position: absolute;
     top: -2rem;
     left: -.8rem;
+    cursor: pointer;
+    z-index: 3;
 }
 
 .timeline{

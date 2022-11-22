@@ -380,9 +380,6 @@ video.addEventListener("timeupdate", () =>{
 
     timelineContainer.style.setProperty("--progress-position", percent)
 
-    console.log('working')
-
-
 })
 
 
@@ -497,7 +494,7 @@ function toggleScrubbing(e){
 
         video.pause()
 
-        console.log('working')
+        console.log(wasPaused)
 
     } else {
 
