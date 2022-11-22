@@ -26,7 +26,9 @@ const container = document.querySelector(".container"),
 
     speed = document.querySelector(".speed"),
 
-    slower = document.querySelector(".slower")
+    slower = document.querySelector(".slower"),
+
+    timelineContainer = document.querySelector('.timeline-container')
 
 
 
@@ -454,3 +456,22 @@ function slowPlayBackSpeed(){
         console.log('working')
 
 }
+
+
+
+
+timelineContainer.addEventListener("click", timelineUpdate)
+
+
+
+function timelineUpdate(e){
+
+      const rect = timelineContainer.getBoundingClientRect()
+
+      const percent = Math.min(Math.max(0, e.x - rect.x), rect.width) / rect.width
+
+
+      console.log(percent)
+
+}
+
