@@ -460,8 +460,54 @@ function slowPlayBackSpeed(){
 
 
 
-timelineContainer.addEventListener("click", timelineUpdate)
+timelineContainer.addEventListener("mousemove", timelineUpdate)
 
+timelineContainer.addEventListener("mousedown", toggleScrubbing)
+
+
+
+
+
+
+let isScrubbing = false
+
+let wasPaused
+
+
+function toggleScrubbing(e){
+
+    const rect = timelineContainer.getBoundingClientRect()
+
+    const percent = Math.min(Math.max(0, e.x - rect.x), rect.width) / rect.width
+
+
+    isScrubbing = (e.buttons & 1) === 1
+
+    container.classList.toggle("scrubbing", isScrubbing)
+
+
+
+    if (isScrubbing) {
+        
+        wasPaused = video.paused
+
+        video.pause()
+
+        console.log('working')
+
+    } else {
+
+        video.currentTime = percent * video.duration
+
+        if(!wasPaused) video.play()
+
+        console.log('perfect')
+        
+    }
+
+    timelineUpdate(e)
+    
+}
 
 
 function timelineUpdate(e){
@@ -469,9 +515,6 @@ function timelineUpdate(e){
       const rect = timelineContainer.getBoundingClientRect()
 
       const percent = Math.min(Math.max(0, e.x - rect.x), rect.width) / rect.width
-
-
-      console.log(percent)
 
 }
 
