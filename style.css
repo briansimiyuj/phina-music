@@ -38,6 +38,12 @@ video{
     height: 30px;
     position: absolute;
     bottom: 2rem;
+    display: none;
+    transition: display 150ms ease;
+}
+
+.container:hover .button-container{
+    display: block;
 }
 
 .buttons{
