@@ -280,3 +280,11 @@ button:hover{
     }
 
 }
+
+@media(max-width: 1000px){
+
+    .button-container{
+        bottom: 11rem;
+    }
+
+}
